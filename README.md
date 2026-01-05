@@ -259,6 +259,12 @@ This framework mirrors paradigm-level human creativity:
 
 Creativity lies in making important structures *reachable by simple means*.
 
+The mapping is not intended as a literal cognitive model, but as a structural analogy about representation. In science, a new theory often introduces a changed set of primitives and permissible transformations, making previously intractable questions newly tractable. This reframes which solutions are nearby and which are prohibitively distant. In the framework here, $D$ plays that representational role by defining the units of change and the legal recombinations.
+
+The analogy also clarifies why the contribution is evaluated indirectly. Humans are not judged by how many problems they solve outright, but by how their conceptual tools enable others to solve a wide range of problems with less effort. Likewise, a generator is considered creative not because it solves tasks directly, but because its decomposition makes task-relevant solutions reachable with modest local edits.
+
+At the same time, the analogy has limits. Human creativity involves intention, explanation, and social uptake, none of which are modeled here. The claim is narrower: representational shifts can be measured by the ease with which they render diverse solutions accessible, echoing the academic intuition that respect accrues to frameworks that make hard questions tractable, not just to isolated answers. That is the sense in which the framework aspires to align with conceptual creativity.
+
 
 
 ## 13. Conclusion
