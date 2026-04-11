@@ -75,40 +75,40 @@ Let:
 * $ \mathcal{S}(p) $ be the set of solutions to problem $ p $ achieving accuracy $\ge \epsilon$
 
 Define a **solution representation space** with distance:
-$$
+```math
 d(s_i, s_j)
-$$
+```
 
 Two solutions are **distinct** if:
-$$
+```math
 d(s_i, s_j) > \delta
-$$
+```
 
 ---
 
 #### 4.2 Creativity as Space Expansion
 
 A transformation $T$ (creative act) maps:
-$$
+```math
 (\mathcal{P}, \mathcal{S}) \rightarrow (\mathcal{P}', \mathcal{S}')
-$$
+```
 
 Creativity is quantified by:
 
 1. **Solution Diversity Gain**
-   $$
+   ```math
    \Delta_S = \sum_{p \in \mathcal{P}} \left( |\text{Distinct}(\mathcal{S}'(p))| - |\text{Distinct}(\mathcal{S}(p))| \right)
-   $$
+   ```
 
 2. **Problem Unlocking**
-   $$
+   ```math
    \Delta_P = |\{p \in \mathcal{P}' \setminus \mathcal{P} : \exists s \in \mathcal{S}'(p)\}|
-   $$
+   ```
 
 3. **Efficiency Gain**
-   $$
+   ```math
    \Delta_C = \mathbb{E}_{p} \left[ C_{\text{before}}(p) - C_{\text{after}}(p) \right]
-   $$
+   ```
 
 Where $C(p)$ is computational cost (time, space, or cognitive steps).
 
@@ -149,9 +149,9 @@ A **creative act** performs:
 > **Subgraph abstraction → node creation**
 
 That is:
-$$
+```math
 G \rightarrow G'
-$$
+```
 where a subgraph $H \subset G$ becomes a new node $v_H$
 
 ---
@@ -161,9 +161,9 @@ where a subgraph $H \subset G$ becomes a new node $v_H$
 Let $c$ be a newly introduced concept.
 
 Define:
-$$
+```math
 \text{Reuse}(c) = |\{p \in \mathcal{P} : c \in \text{solutions of } p\}|
-$$
+```
 
 A concept is **creative** if:
 
@@ -184,14 +184,14 @@ Let:
 * $\mathcal{O}$: set of operations (transformations, reasoning steps)
 
 A reframing $T$ induces:
-$$
+```math
 \mathcal{O} \rightarrow \mathcal{O}'
-$$
+```
 
 We measure:
-$$
+```math
 \Delta_{\text{op}} = \mathbb{E}[\text{cost}(\mathcal{O}) - \text{cost}(\mathcal{O}')]
-$$
+```
 
 Crucially:
 
@@ -220,9 +220,9 @@ We do not observe $I$, but approximate it via:
 
 #### Creative Value (Interest-Weighted)
 
-$$
+```math
 \text{Creativity}(T) = \sum_{p \in \mathcal{P}'} I(p) \cdot \mathbf{1}[\text{newly enabled}]
-$$
+```
 
 Thus:
 
@@ -239,9 +239,9 @@ A reframing:
 * alters decomposition
 
 Formally:
-$$
+```math
 \mathcal{H} \rightarrow \mathcal{H}'
-$$
+```
 
 Where:
 
@@ -263,9 +263,9 @@ A powerful reframing:
 * yields repeated savings across tasks
 
 Define amortized gain:
-$$
+```math
 \text{Gain} = \sum_{p \in \mathcal{P}} \left( C_{\text{before}}(p) - C_{\text{after}}(p) \right) - C_0
-$$
+```
 
 Creativity is high when:
 
