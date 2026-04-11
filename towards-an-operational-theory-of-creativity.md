@@ -1,7 +1,7 @@
+# Towards an Operational Theory of Creativity: Reframing, Abstraction, and the Expansion of Problem-Solution Spaces
 
-## White Paper
-
-**Towards an Operational Theory of Creativity: Reframing, Abstraction, and the Expansion of Problem–Solution Spaces**
+**Author:** Fabrizio Costa  
+**Date:** 2026-04-11
 
 ---
 
@@ -71,46 +71,46 @@ It is:
 
 Let:
 
-* ( \mathcal{P} ) be a set of problems
-* ( \mathcal{S}(p) ) be the set of solutions to problem ( p ) achieving accuracy ≥ ( \epsilon )
+* $ \mathcal{P} $ be a set of problems
+* $ \mathcal{S}(p) $ be the set of solutions to problem $ p $ achieving accuracy $\ge \epsilon$
 
 Define a **solution representation space** with distance:
-[
+$$
 d(s_i, s_j)
-]
+$$
 
 Two solutions are **distinct** if:
-[
+$$
 d(s_i, s_j) > \delta
-]
+$$
 
 ---
 
 #### 4.2 Creativity as Space Expansion
 
-A transformation ( T ) (creative act) maps:
-[
+A transformation $T$ (creative act) maps:
+$$
 (\mathcal{P}, \mathcal{S}) \rightarrow (\mathcal{P}', \mathcal{S}')
-]
+$$
 
 Creativity is quantified by:
 
 1. **Solution Diversity Gain**
-   [
+   $$
    \Delta_S = \sum_{p \in \mathcal{P}} \left( |\text{Distinct}(\mathcal{S}'(p))| - |\text{Distinct}(\mathcal{S}(p))| \right)
-   ]
+   $$
 
 2. **Problem Unlocking**
-   [
-   \Delta_P = |{p \in \mathcal{P}' \setminus \mathcal{P} : \exists s \in \mathcal{S}'(p)}|
-   ]
+   $$
+   \Delta_P = |\{p \in \mathcal{P}' \setminus \mathcal{P} : \exists s \in \mathcal{S}'(p)\}|
+   $$
 
 3. **Efficiency Gain**
-   [
-   \Delta_C = \mathbb{E}*{p} \left[ C*{\text{before}}(p) - C_{\text{after}}(p) \right]
-   ]
+   $$
+   \Delta_C = \mathbb{E}_{p} \left[ C_{\text{before}}(p) - C_{\text{after}}(p) \right]
+   $$
 
-Where ( C(p) ) is computational cost (time, space, or cognitive steps).
+Where $C(p)$ is computational cost (time, space, or cognitive steps).
 
 ---
 
@@ -149,21 +149,21 @@ A **creative act** performs:
 > **Subgraph abstraction → node creation**
 
 That is:
-[
+$$
 G \rightarrow G'
-]
-where a subgraph ( H \subset G ) becomes a new node ( v_H )
+$$
+where a subgraph $H \subset G$ becomes a new node $v_H$
 
 ---
 
 #### Key Metric: Concept Reuse
 
-Let ( c ) be a newly introduced concept.
+Let $c$ be a newly introduced concept.
 
 Define:
-[
-\text{Reuse}(c) = |{p \in \mathcal{P} : c \in \text{solutions of } p}|
-]
+$$
+\text{Reuse}(c) = |\{p \in \mathcal{P} : c \in \text{solutions of } p\}|
+$$
 
 A concept is **creative** if:
 
@@ -181,17 +181,17 @@ Creativity also manifests as:
 
 Let:
 
-* ( \mathcal{O} ): set of operations (transformations, reasoning steps)
+* $\mathcal{O}$: set of operations (transformations, reasoning steps)
 
-A reframing ( T ) induces:
-[
+A reframing $T$ induces:
+$$
 \mathcal{O} \rightarrow \mathcal{O}'
-]
+$$
 
 We measure:
-[
+$$
 \Delta_{\text{op}} = \mathbb{E}[\text{cost}(\mathcal{O}) - \text{cost}(\mathcal{O}')]
-]
+$$
 
 Crucially:
 
@@ -207,9 +207,9 @@ Not all combinatorial expansions matter.
 
 Define:
 
-* ( I(p) ): latent *interest function* over problems
+* $I(p)$: latent *interest function* over problems
 
-We do not observe ( I ), but approximate it via:
+We do not observe $I$, but approximate it via:
 
 * citations
 * reuse
@@ -220,9 +220,9 @@ We do not observe ( I ), but approximate it via:
 
 #### Creative Value (Interest-Weighted)
 
-[
+$$
 \text{Creativity}(T) = \sum_{p \in \mathcal{P}'} I(p) \cdot \mathbf{1}[\text{newly enabled}]
-]
+$$
 
 Thus:
 
@@ -239,13 +239,13 @@ A reframing:
 * alters decomposition
 
 Formally:
-[
+$$
 \mathcal{H} \rightarrow \mathcal{H}'
-]
+$$
 
 Where:
 
-* ( \mathcal{H}' ) includes hypotheses not expressible in ( \mathcal{H} )
+* $\mathcal{H}'$ includes hypotheses not expressible in $\mathcal{H}$
 
 Example:
 
@@ -259,13 +259,13 @@ Example:
 
 A powerful reframing:
 
-* incurs initial cost ( C_0 )
+* incurs initial cost $C_0$
 * yields repeated savings across tasks
 
 Define amortized gain:
-[
+$$
 \text{Gain} = \sum_{p \in \mathcal{P}} \left( C_{\text{before}}(p) - C_{\text{after}}(p) \right) - C_0
-]
+$$
 
 Creativity is high when:
 
@@ -276,7 +276,7 @@ Creativity is high when:
 
 ### 11. Synthesis: Operational Definition
 
-A transformation ( T ) is creative if it satisfies:
+A transformation $T$ is creative if it satisfies:
 
 1. **Unlocking**
    Enables new solvable or meaningful problems
@@ -326,7 +326,7 @@ A transformation ( T ) is creative if it satisfies:
 ### 13. Open Challenges
 
 * Defining robust distance metrics over solutions
-* Modeling the latent interest function ( I(p) )
+* Modeling the latent interest function $I(p)$
 * Representing heterogeneous solution types
 * Capturing long-term propagation of concepts
 * Avoiding trivial combinatorial expansions
